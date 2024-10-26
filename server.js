@@ -1,14 +1,14 @@
 const express = require("express");
 const cors = require("cors");
-const memberRoute=require("./app/controllers/members/members.router")
-const productRoute=require("./app/controllers/Product/product.route")
-const lookupRoute=require("./app/controllers/Lookup/lookup.route")
-const orderRoute=require("./app/controllers/Orders/order.route")
-const mesurmentLookupRoute=require("./app/controllers/MesurmentLookup/mesurmentLookup.route")
+const memberRoute=require("./controllers/members/members.router")
+const productRoute=require("./controllers/Product/product.route")
+const lookupRoute=require("./controllers/Lookup/lookup.route")
+const orderRoute=require("./controllers/Orders/order.route")
+const mesurmentLookupRoute=require("./controllers/MesurmentLookup/mesurmentLookup.route")
 const app = express();
 const bodyparser=require('body-parser');
 const sql = require('mssql');
-const config=require('./app/config/db.config');
+const config=require('./config/config.json');
 
 var corsOptions = {
   origin: "*"
