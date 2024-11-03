@@ -11,7 +11,7 @@ const sql = require('mssql');
 const config=require('./config/config.json');
 
 var corsOptions = {
-
+  origin: "*"
 };
 const dbConfig = {
   user: "db_aae43c_abhigna_admin",
